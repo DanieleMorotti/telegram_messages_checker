@@ -34,7 +34,7 @@ async def check_old(chats):
             #the selected regex find if in the message there are word1 or word2 as single words(not in compound words) in case unsensitive mode
             is_found = find_words(mes.message)
             if is_found is not None:
-                playsound.playsound('path_to_file', True)
+                playsound.playsound('path_to_file_mp3_or_wav', True)
                 
 with client:
     client.loop.run_until_complete(check_old(chats))
@@ -46,7 +46,7 @@ async def new_message_listener(event):
     txt = event.raw_text
     is_found = find_words(txt)
     if is_found is not None: 
-        playsound.playsound('path_to_file', True)
+        playsound.playsound('path_to_file_mp3_or_wav', True)
     else:
         print(txt)
        

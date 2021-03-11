@@ -17,7 +17,7 @@ while($true)
 		if($fail_count -gt $tolerance)
 		{
 			$Song=New-Object System.Media.SoundPlayer
-			$Song.SoundLocation="C:\Users\danie\Documents\University\Python\python_messages_checker\U2-The miracle.wav"
+			$Song.SoundLocation="path_to_wav"
 			$Song.play()
 			Start-Sleep -s 10
 			$Song.stop()

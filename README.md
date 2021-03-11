@@ -19,9 +19,18 @@ and run 'pip install -r requirements.txt' if you're on Windows, requirements_lin
 
 ## Run the scripts
 You need to insert some data in the python script to customize your search. Check these lines:
-- lines 7-8, you need to insert your own api id as said previously;
-- line 14, you have to insert here the words you want to be warned about;
-- line 25, if you want to check if some messages are arrived in some chats while you are offline or the python script had stopped working;
+- ### check_notification.py
+  - lines 7-8, you need to insert your own api id as said previously;
+  - line 14, you have to insert here the words you want to be warned about;
+  - line 25, if you want to check if some messages are arrived in some chats while you are offline or the python script had stopped working;
+  - lines 37-49, you need to insert the path to a song (mp3 or wav).
+- ### check_process.ps1
+  - line 4, insert number of allowed failures;
+  - line 12, insert the path to the python executable (the one inside the virtualenv if you are using it).
+- ### check_process.sh
+  - line 4, insert number of allowed failures;
+  - line 9, insert the path to the python executable (the one inside the virtualenv if you are using it);
+  - line 13, insert path to a .wav song.
 
 If you want to execute the python script only run 'check_notification.py', the first time you run it a message appear to log into your Telegram account. After that a 'session_file.session' file is created and if you don't delete it the following times you don't need to log in again.
 I used the playsound library for simplicity but it doesn't offer many features,therefore it's necessary to stop the song with 'ctrl+c'.
