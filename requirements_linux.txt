@@ -1,0 +1,10 @@
+logging==0.4.9.6
+playsound==1.2.2
+pyaes==1.6.1
+pyasn1==0.4.8
+rsa==4.7.1
+ruamel.yaml==0.16.13
+ruamel.yaml.clib==0.2.2
+Telethon==1.19.5
+vext==0.7.4
+vext.gi==0.7.4

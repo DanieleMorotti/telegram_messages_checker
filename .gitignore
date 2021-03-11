@@ -1,0 +1,9 @@
+#VS files
+.vs
+
+# Virtualenv files
+env/
+
+# Python cache
+__pycache__/
+
